@@ -1,1 +1,1 @@
-Light and eas.
+Light and easy.
