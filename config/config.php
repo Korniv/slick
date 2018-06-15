@@ -6,10 +6,8 @@ $config = [
     'alias' => 'slick.dev',
     'layer' =>SLICK_SIMPLE_LAYER_LEVEL,
     'env' => SLICK_ENV,
-    'default'=>[
-        'controller' => 'api',
-        'action' => 'get'
-    ],
+    'default_controller'=> 'api',
+    'default_action'=> 'get',
     'db' => require dirname(__FILE__).DIRECTORY_SEPARATOR.'db.php',
     'params' => require dirname(__FILE__).DIRECTORY_SEPARATOR.'params.php',
 ];
