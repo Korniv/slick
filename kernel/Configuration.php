@@ -21,14 +21,12 @@ class Configuration
             'alias',
             'layer',
             'env',
-            'default-controller',
-            'default-action',
+            'default_controller',
+            'default_action',
             'db',
             'params'
         ];
     }
-
-
 
     public static function init($configuration)
     {
@@ -36,7 +34,6 @@ class Configuration
         foreach (self::getRequiredVars() as $variableName){
             $config->$variableName = $configuration[$variableName];
         }
-        //var_dump($config);
         return $config;
     }
 
