@@ -32,9 +32,9 @@ class Slick
         self::$app->initDatabase();
         self::$app->initRequest();
         self::$app->initRouter();
-        //DONE
         self::$app->initMiddleware();
-        //self::$app->initController();
+        //DONE
+        self::$app->initController();
         //var_dump($configuration);
         return self::$app->returnResult();
     }
@@ -66,7 +66,8 @@ class Slick
 
     private function initMiddleware()
     {
-
+        //TODO middleware
+        return;
     }
 
     private function initDatabase()
@@ -81,11 +82,9 @@ class Slick
 
     private function initController()
     {
-
         $this->controller = $this->route->getController();
         $this->action = $this->route->getAction();
         $this->params = $this->route->getParams();
-
         //init  current controller/action
     }
 
